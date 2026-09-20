@@ -1,0 +1,8 @@
+# djgreensatyr.live — Netlify config
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
