@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — Where DJ Green Satyr Plays Next | Phoenix, AZ</title>
+<meta name="description" content="Upcoming DJ Green Satyr shows — club nights, leather events, Faerie gatherings, and special appearances in Phoenix and beyond.">
+<link rel="canonical" href="events.html">
+<meta property="og:title" content="Events — DJ Green Satyr">
+<meta property="og:description" content="Where Green Satyr plays next.">
+<meta property="og:image" content="https://djgreensatyr.live/assets/djgreensatyrlogosq.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djgreensatyr.live/events.html">
+<meta name="theme-color" content="#00bfa5">
+<link rel="icon" href="assets/djgreensatyrlogosq.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class='nav-logo' href='/'><img src="assets/dj-green-satyr-logo.png" alt="DJ Green Satyr" width="298" height="253"></a>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links">
+    <li><a href='/'>Home</a></li>
+    <li><a href='/booking'>Book Me</a></li>
+    <li><a class='active' href='/events'>Events</a></li>
+    <li><a href='/theatre'>The Theatre</a></li>
+    <li><a href='/cratedetective'>Crate Detective</a></li>
+    <li><a href='/contact'>Contact</a></li>
+    <li><a class='nav-cta' href='/booking'>Book a Set</a></li>
+  </ul>
+</nav>
+
+<header class="hero hero-heavy">
+  <img class="hero-video" src="assets/live-hero.jpg" alt="DJ Green Satyr live" style="object-position:center center">
+  <div class="hero-scrim"></div>
+  <img src="assets/dp-logo.png" alt="Double Penetration" style="max-width:220px;width:55%;height:auto;margin:0 auto 1.2rem;display:block;position:relative;z-index:1">
+  <p class="kicker" style="position:relative;z-index:1">The Calendar</p>
+  <h1 style="position:relative;z-index:1">Where the Satyr <span class="gold-glow">plays next.</span></h1>
+  <p class="lede" style="margin:1.2rem auto 0;position:relative;z-index:1">Gigs, leather events, gatherings, and special appearances — Phoenix and beyond.</p>
+</header>
+
+<section>
+  <div class="wrap" style="max-width:760px">
+    <p class="kicker purple">Upcoming</p>
+
+    <!-- EVENT CARD TEMPLATE — copy this block per show:
+    <a class="news-item" href="TICKET_OR_EVENT_URL">
+      <strong>📅 EVENT NAME — Venue, City</strong>
+      <span>Sat Oct 31 · 9PM · ticket info</span>
+    </a>
+    -->
+
+    <div class="card center" style="padding:2.5rem 1.5rem">
+      <h3>New dates are being inked now.</h3>
+      <p style="margin-top:.6rem">Join the Circle below and you'll hear about every show before anyone else.</p>
+    </div>
+
+    <div class="signup" style="margin-top:2.5rem">
+      <p class="kicker">Never Miss a Night</p>
+      <h2>Get show announcements</h2>
+      <form name="circle" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks">
+        <input type="hidden" name="form-name" value="circle">
+        <input type="hidden" name="source" value="events_page">
+        <p class="hidden"><input name="bot-field"></p>
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button class="btn btn-gold" type="submit">Notify Me</button>
+      </form>
+      <p class="fine">No spam. No noise. Just transmissions.</p>
+    </div>
+
+    <div class="card center" style="margin-top:2.5rem;padding:2rem 1.5rem">
+      <p class="kicker gold" style="margin-bottom:.4rem">Promoters</p>
+      <h3>Want the Satyr on your bill?</h3>
+      <div class="btn-row" style="justify-content:center"><a class='btn btn-gold' href='/booking'>Book a Set →</a></div>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--line)">
+  <div class="wrap center">
+    <p class="kicker">Now Playing</p>
+    <h2>The Scapegoat</h2>
+    <iframe style="border:1px solid var(--line);width:100%;max-width:700px;height:120px;margin-top:1.4rem" src="https://bandcamp.com/EmbeddedPlayer/v=2/track=1046514840/size=large/bgcol=020a10/linkcol=00bfa5/tracklist=false/artwork=small/" seamless title="The Scapegoat by DJ Green Satyr" loading="lazy"></iframe>
+    <div class="btn-row" style="justify-content:center;margin-top:1.2rem">
+      <a class="btn btn-ghost" href="https://djgreensatyr.bandcamp.com/" target="_blank" rel="noopener">More Music on Bandcamp →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a class='nav-logo' href='/'><img src="assets/dj-green-satyr-logo.png" alt="DJ Green Satyr" width="298" height="253" style="height:auto;width:150px" loading="lazy"></a>
+      <p class="foot-note">The Green Satyr Universe — music, myth, and the people who made it.</p>
+    </div>
+    <div>
+      <h4>This Site</h4>
+      <ul>
+        <li><a href='/booking'>Book a Set / EPK</a></li>
+        <li><a href='/theatre'>The Theatre</a></li>
+        <li><a href='/cratedetective'>Crate Detective</a></li>
+        <li><a href='/contact'>Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>The Universe</h4>
+      <ul>
+        <li><a href="https://greensatyr.buzz/">Satyr Arcana / Music</a></li>
+        <li><a href="https://djgreensatyr.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a></li>
+        <li><a href="https://soundcloud.com/thegreensatyr" target="_blank" rel="noopener">SoundCloud</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2026 DJ Green Satyr · Phoenix, AZ</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
