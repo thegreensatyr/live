@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — DJ Green Satyr | Phoenix, AZ</title>
+<meta name="description" content="Get in touch with DJ Green Satyr — booking, press, collaborations, and everything else. Phoenix, AZ.">
+<link rel="canonical" href="contact.html">
+<meta property="og:title" content="Contact — DJ Green Satyr">
+<meta property="og:description" content="Booking, press, collaborations — get in touch.">
+<meta property="og:image" content="https://djgreensatyr.live/assets/djgreensatyrlogosq.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://djgreensatyr.live/contact.html">
+<meta name="theme-color" content="#00bfa5">
+<link rel="icon" href="assets/djgreensatyrlogosq.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a class='nav-logo' href='/'><img src="assets/dj-green-satyr-logo.png" alt="DJ Green Satyr" width="298" height="253"></a>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+  <ul class="nav-links">
+    <li><a href='/'>Home</a></li>
+    <li><a href='/booking'>Book Me</a></li>
+    <li><a href='/events'>Events</a></li>
+    <li><a href='/theatre'>The Theatre</a></li>
+    <li><a href='/cratedetective'>Crate Detective</a></li>
+    <li><a class='active' href='/contact'>Contact</a></li>
+    <li><a class='nav-cta' href='/booking'>Book a Set</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <p class="kicker">Say Hello</p>
+  <h1>Get in <span class="gold-glow">touch.</span></h1>
+  <p class="lede">Press, collaborations, questions — or anything that isn't a booking. (Booking a set? Use the <a href='/booking'>booking form</a> — it's faster.)</p>
+</header>
+
+<section>
+  <div class="wrap" style="max-width:640px">
+    <div class="signup" style="text-align:center">
+      <p class="kicker">Direct Line</p>
+      <h2>Send a message</h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks" style='display:block;max-width:none;margin-top:1.8rem'>
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><input name="bot-field"></p>
+        <div class="form-grid">
+          <div><label for="c-name">Your Name</label><input type="text" id="c-name" name="name" required></div>
+          <div><label for="c-email">Email</label><input type="email" id="c-email" name="email" required></div>
+          <div class="full"><label for="c-topic">Topic</label>
+            <select id="c-topic" name="topic">
+              <option>Press / Media</option><option>Collaboration</option><option>The Theatre</option>
+              <option>Crate Detective</option><option>Something else</option>
+            </select>
+          </div>
+          <div class="full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" rows="6" required></textarea></div>
+        </div>
+        <button class="btn btn-gold" type="submit" style="margin-top:1.4rem">Send Message</button>
+      </form>
+      <p class="fine">Answered within 24 hours.</p>
+    </div>
+
+    <div class="grid grid-3" style="margin-top:2.5rem">
+      <a class="card center" href="https://soundcloud.com/thegreensatyr" target="_blank" rel="noopener"><p class="mono">Listen</p><h3>SoundCloud</h3></a>
+      <a class="card center" href="https://djgreensatyr.bandcamp.com/" target="_blank" rel="noopener"><p class="mono">Buy</p><h3>Bandcamp</h3></a>
+      <a class="card center" href="https://www.imdb.com/name/nm5407388/" target="_blank" rel="noopener"><p class="mono">Screen</p><h3>IMDb</h3></a>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--line)">
+  <div class="wrap center">
+    <p class="kicker">Now Playing</p>
+    <h2>The Scapegoat</h2>
+    <iframe style="border:1px solid var(--line);width:100%;max-width:700px;height:120px;margin-top:1.4rem" src="https://bandcamp.com/EmbeddedPlayer/v=2/track=1046514840/size=large/bgcol=020a10/linkcol=00bfa5/tracklist=false/artwork=small/" seamless title="The Scapegoat by DJ Green Satyr" loading="lazy"></iframe>
+    <div class="btn-row" style="justify-content:center;margin-top:1.2rem">
+      <a class="btn btn-ghost" href="https://djgreensatyr.bandcamp.com/" target="_blank" rel="noopener">More Music on Bandcamp →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a class='nav-logo' href='/'><img src="assets/dj-green-satyr-logo.png" alt="DJ Green Satyr" width="298" height="253" style="height:auto;width:150px" loading="lazy"></a>
+      <p class="foot-note">The Green Satyr Universe — music, myth, and the people who made it.</p>
+    </div>
+    <div>
+      <h4>This Site</h4>
+      <ul>
+        <li><a href='/booking'>Book a Set / EPK</a></li>
+        <li><a href='/events'>Events</a></li>
+        <li><a href='/theatre'>The Theatre</a></li>
+        <li><a href='/cratedetective'>Crate Detective</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>The Universe</h4>
+      <ul>
+        <li><a href="https://greensatyr.buzz/">Satyr Arcana / Music</a></li>
+        <li><a href="https://djgreensatyr.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a></li>
+        <li><a href="https://soundcloud.com/thegreensatyr" target="_blank" rel="noopener">SoundCloud</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">© 2026 DJ Green Satyr · Phoenix, AZ</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
