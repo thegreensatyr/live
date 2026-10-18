@@ -388,3 +388,99 @@ h1, h2, h3 {
 .more summary::-webkit-details-marker { display: none; }
 .more summary:hover { border-color: var(--teal); color: var(--teal); }
 .more[open] summary { margin-bottom: 1rem; }
+
+/* ═══ BRAND LOCK — djgreensatyr.live (Oct 2026) ════════════════════════
+   Black fetish leather #080808 base. Kelly green #4CBB17 identity.
+   Lilac #C8A8E8 accents. Oil-slick / aurora iridescence as the signature.
+   NO navy, NO teal-as-dominant, NO red, NO orange/gold. Keep this block LAST. */
+:root {
+  --bg: #080808;
+  --green: #4CBB17;
+  --teal: #4CBB17;          /* legacy name: now kelly green */
+  --purple: #C8A8E8;        /* legacy name: now lilac */
+  --gold: #C8A8E8;          /* legacy name: lilac accent, never gold */
+  --line: rgba(200, 168, 232, 0.14);
+  --panel: rgba(200, 168, 232, 0.04);
+  --oilslick: linear-gradient(135deg, #4CBB17 0%, #00bfa5 20%, #3d7bff 40%, #7c4dff 60%, #C8A8E8 80%, #4CBB17 100%);
+}
+html { background: #080808; }
+body { background: #080808; }
+
+/* aurora / oil-slick sheen drifting over the black */
+body::before {
+  content: ''; position: fixed; inset: -15%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(38% 30% at 12% 8%,  rgba(76, 187, 23, 0.11), transparent 70%),
+    radial-gradient(34% 26% at 88% 22%, rgba(124, 77, 255, 0.10), transparent 70%),
+    radial-gradient(42% 28% at 55% 98%, rgba(0, 191, 165, 0.07), transparent 70%),
+    radial-gradient(30% 24% at 72% 62%, rgba(200, 168, 232, 0.06), transparent 70%),
+    radial-gradient(28% 22% at 22% 70%, rgba(61, 123, 255, 0.05), transparent 70%);
+  animation: aurora 28s ease-in-out infinite alternate;
+}
+@keyframes aurora {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+  50%  { transform: translate3d(3%, -2%, 0) rotate(6deg) scale(1.06); }
+  100% { transform: translate3d(-3%, 2%, 0) rotate(-5deg) scale(1.02); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body::before, h1, h2, h3, .gold-glow { animation: none !important; }
+}
+
+/* nav */
+.nav { background: rgba(8, 8, 8, 0.92); border-bottom: 1px solid var(--line); }
+.nav::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: var(--oilslick); background-size: 300% 100%; animation: oilslick 8s ease infinite; opacity: 0.7; }
+@media (max-width: 820px) { .nav-links { background: rgba(8, 8, 8, 0.98); } }
+.nav-links a:hover, .nav-links a.active { color: #4CBB17; }
+
+/* primary buttons: kelly green, oil-slick on hover */
+.btn-gold, .btn-green, .nav-links a.nav-cta, .video-facade .vf-play span {
+  background: linear-gradient(135deg, #5fd626, #4CBB17);
+  color: #080808; box-shadow: 0 0 24px rgba(76, 187, 23, 0.35);
+}
+.btn-gold:hover, .btn-green:hover, .nav-links a.nav-cta:hover {
+  background: linear-gradient(135deg, #4CBB17 0%, #5fe0c8 30%, #9fb6ff 60%, #C8A8E8 100%);
+  background-size: 200% 200%; animation: oilslick 3s ease infinite;
+  color: #080808; box-shadow: 0 0 36px rgba(124, 77, 255, 0.35), 0 0 22px rgba(76, 187, 23, 0.35);
+}
+.btn-ghost:hover { border-color: #C8A8E8; color: #C8A8E8; }
+.video-facade .vf-play span::after { border-color: transparent transparent transparent #080808; }
+.video-facade .vf-caption { background: linear-gradient(0deg, rgba(8, 8, 8, 0.92), transparent); }
+
+/* heroes: black with aurora glow, no navy */
+.hero { background: radial-gradient(ellipse at 50% 0%, rgba(124, 77, 255, 0.12) 0%, transparent 65%); }
+.hero::before {
+  background-image: linear-gradient(rgba(200, 168, 232, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 168, 232, 0.035) 1px, transparent 1px);
+}
+.hero-heavy {
+  background:
+    radial-gradient(ellipse at 50% 110%, rgba(76, 187, 23, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 0%, rgba(124, 77, 255, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 10%, rgba(0, 191, 165, 0.10) 0%, transparent 55%),
+    #080808;
+}
+@keyframes forge {
+  0%, 100% { box-shadow: inset 0 -80px 160px rgba(76, 187, 23, 0.10); }
+  50% { box-shadow: inset 0 -80px 220px rgba(124, 77, 255, 0.18); }
+}
+.hero-video + .hero-scrim { background: linear-gradient(180deg, rgba(8, 8, 8, 0.55) 0%, rgba(8, 8, 8, 0.25) 50%, rgba(8, 8, 8, 0.88) 100%); }
+
+/* accents */
+.kicker, .badge, .proof .num, .card .mono, footer h4, .testimonial cite, .video-facade .vf-caption b { color: #4CBB17; }
+.kicker.purple, .deck-cell .n { color: #C8A8E8; }
+.badge { border-color: rgba(76, 187, 23, 0.45); }
+.card:hover, .news-item:hover { border-color: rgba(200, 168, 232, 0.5); }
+footer a:hover, .more summary:hover { color: #C8A8E8; border-color: #C8A8E8; }
+.testimonial { border-left-color: #C8A8E8; }
+.signup { border-color: rgba(200, 168, 232, 0.35); background: rgba(200, 168, 232, 0.04); box-shadow: 0 0 60px rgba(124, 77, 255, 0.10); }
+.q-progress div { background: var(--oilslick); background-size: 300% 100%; }
+
+/* forms */
+input[type='text'], input[type='email'], input[type='date'], select, textarea { background: rgba(8, 8, 8, 0.85); }
+input:focus, select:focus, textarea:focus, .signup input[type='email']:focus { border-color: #4CBB17; }
+
+/* theatre posters: iridescent edge glow */
+.poster {
+  border: 1px solid rgba(200, 168, 232, 0.35);
+  box-shadow: 0 0 50px rgba(76, 187, 23, 0.16), 0 0 90px rgba(124, 77, 255, 0.18);
+}
