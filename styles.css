@@ -484,3 +484,20 @@ input:focus, select:focus, textarea:focus, .signup input[type='email']:focus { b
   border: 1px solid rgba(200, 168, 232, 0.35);
   box-shadow: 0 0 50px rgba(76, 187, 23, 0.16), 0 0 90px rgba(124, 77, 255, 0.18);
 }
+
+/* ─── Oct 2026 additions: Halloween drop, events, live panel ─── */
+.fine { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; color: var(--ink-faint); }
+.fine a { color: #C8A8E8; }
+.halloween-drop {
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(124, 77, 255, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(76, 187, 23, 0.12) 0%, transparent 60%);
+}
+.halloween-drop .countdown { justify-content: center; margin-top: 1.4rem; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; gap: 1.4rem; }
+.halloween-drop .countdown b { font-size: 1.8rem; display: block; font-family: var(--font-display); letter-spacing: 0; }
+.event-feature, .event-recurring { margin-bottom: 1rem; padding: 1.8rem 1.6rem; }
+.event-feature { border-color: rgba(76, 187, 23, 0.55); box-shadow: 0 0 40px rgba(76, 187, 23, 0.12), 0 0 70px rgba(124, 77, 255, 0.12); }
+.event-feature h3, .event-recurring h3 { margin: 0.4rem 0 0.6rem; }
+.event-feature p, .event-recurring p { color: var(--ink-dim); }
+.event-feature .fine { margin-top: 0.8rem; }
