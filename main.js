@@ -38,3 +38,14 @@ document.querySelectorAll('.video-facade[data-video]').forEach(function (el) {
     el.appendChild(iframe);
   });
 });
+
+// Date-based show/hide (no redeploy needed): data-show-until / data-show-from = ISO time
+(function () {
+  var now = Date.now();
+  document.querySelectorAll('[data-show-until]').forEach(function (el) {
+    if (now >= new Date(el.getAttribute('data-show-until')).getTime()) el.hidden = true;
+  });
+  document.querySelectorAll('[data-show-from]').forEach(function (el) {
+    if (now >= new Date(el.getAttribute('data-show-from')).getTime()) el.hidden = false;
+  });
+})();

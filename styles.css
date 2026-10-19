@@ -501,3 +501,11 @@ input:focus, select:focus, textarea:focus, .signup input[type='email']:focus { b
 .event-feature h3, .event-recurring h3 { margin: 0.4rem 0 0.6rem; }
 .event-feature p, .event-recurring p { color: var(--ink-dim); }
 .event-feature .fine { margin-top: 0.8rem; }
+[hidden] { display: none !important; }
+
+/* ─── mobile tap targets (44px minimum) ─── */
+@media (max-width: 820px) {
+  footer li { margin-bottom: 0; }
+  footer li a { display: inline-block; padding: 0.7rem 0; min-height: 44px; }
+  .nav-toggle { min-width: 44px; min-height: 44px; }
+}
