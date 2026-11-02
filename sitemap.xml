@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://djgreensatyr.live/</loc><priority>1.0</priority></url>
-  <url><loc>https://djgreensatyr.live/booking</loc><priority>0.9</priority></url>
-  <url><loc>https://djgreensatyr.live/events</loc><priority>0.7</priority></url>
-  <url><loc>https://djgreensatyr.live/theatre</loc><priority>0.6</priority></url>
-  <url><loc>https://djgreensatyr.live/contact</loc><priority>0.5</priority></url>
-  <url><loc>https://djgreensatyr.live/cratedetective</loc><priority>0.6</priority></url>
+  <url><loc>https://djgreensatyr.live/</loc><lastmod>2026-11-01</lastmod><priority>1.0</priority></url>
+  <url><loc>https://djgreensatyr.live/booking</loc><lastmod>2026-11-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://djgreensatyr.live/events</loc><lastmod>2026-11-01</lastmod><priority>0.7</priority></url>
+  <url><loc>https://djgreensatyr.live/theatre</loc><lastmod>2026-11-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://djgreensatyr.live/contact</loc><lastmod>2026-11-01</lastmod><priority>0.5</priority></url>
+  <url><loc>https://djgreensatyr.live/cratedetective</loc><lastmod>2026-11-01</lastmod><priority>0.6</priority></url>
 </urlset>
